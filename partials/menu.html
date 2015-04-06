@@ -1,0 +1,46 @@
+<div id="header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <li class="dropdown nav navbar-nav">
+          <a class="navbar-brand dropdown-toggle" href="#" data-toggle="dropdown">{{applicationName}}</a>
+          <ul class="dropdown-menu">
+            <li>
+              <a ui-sref='about' id="about">About {{applicationName}}</a>
+            </li>
+            <li>
+              <a ui-sref='checkForUpdate' id="checkForUpdate">Check for Updates...</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a ui-sref='preferences' id="preferences">Preferences...</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a ui-sref='quit' id="quit">Quit</a>
+            </li>
+          </ul>
+        </li>
+      </div>
+
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown">Find By <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a ui-sref="findby.hashtag" id="findby.hashtag">Hash Tag</a>
+              </li>
+              <li>
+                <a ui-sref="findby.location" id="findby.location">Location</a>
+              </li>
+              <li>
+                <a ui-sref="findby.name" id="findby.name">Name</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>

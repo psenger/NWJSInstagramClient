@@ -1,0 +1,12 @@
+<div class="container">
+  <form role="form">
+    <div class="form-group">
+      <label class="control-label" for="outputPath">Output Path</label>
+      <input type="text" class="form-control" id="outputPath" name="outputPath" placeholder="Enter Output Path" ng-model="config.outputPath">
+    </div>
+
+    <button class="btn btn-primary" type="button" ng-click="save()">Save</button>
+    <a ui-sref='home' class="btn btn-default" type="button" role="button">Cancel</a>
+
+  </form>
+</div>
